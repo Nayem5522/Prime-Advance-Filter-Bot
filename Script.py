@@ -704,7 +704,7 @@ special Thanks To ❤️ Developers -
 
 -Dev 1 [Owner of this bot ]<a href='https://t.me/Prime_Nayem'>Prime</a>
 
--Dev 2 <a href='https://t.me/Prime_Movies4U'>VJ</a>
+-Dev 2 <a href='https://t.me/Prime_Movies4U'>PRIME</a>
 
 -Dev 3 <a href='https://t.me/+yRq4k6J8o2E0OWJl>Prime Movie Request Group</a>
 
