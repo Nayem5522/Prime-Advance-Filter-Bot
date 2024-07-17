@@ -74,7 +74,7 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'prime_Movies4u00') # P
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+OzcPK0fNNew5Yjk1')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Prime_Movies4U')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Prime_Movie_Watch_Dawnload/60')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+zPYOB8biBP84MmU1') # Support Chat Link Without https:// or @
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+OzcPK0fNNew5Yjk1') # Support Chat Link Without https:// or @
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
