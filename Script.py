@@ -111,7 +111,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
     EXTRAMOD_TXT = """ʜᴇʟᴘ: Exᴛʀᴀ Mᴏᴅᴜʟᴇs
 <b>ɴᴏᴛᴇ:</b>
 my features Stay here new features coming soon...  
- <b>✯ Maintained by : <a href=https://t.me/Prime_Nayem>☢PRIM☢</a></b>
+ <b>✯ Maintained by : <a href=https://t.me/Prime_Nayem>☢S.H Nayem ☢</a></b>
   
  <b>✯ Join here : <a href=https://t.me/Prime_Movies4U>☢Join my updateds☢</a></b> 
   
@@ -229,7 +229,8 @@ Nᴀᴍᴇ - {}"""
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
-<b> Size ⚙️: {file_size}</b>""" 
+<b> Size ⚙️: {file_size}
+Jᴏɪɴ Now ➠ [Prime Movie⚡](https://t.me/Prime_Movies4U)</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
