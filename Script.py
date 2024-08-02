@@ -230,7 +230,7 @@ Nᴀᴍᴇ - {}"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
+    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : @Prime_Movies4U {file_name}
 <b> Size ⚙️: {file_size}
 
 Jᴏɪɴ Now ➠ [Prime Movie⚡](https://t.me/Prime_Movies4U)</b>""" 
