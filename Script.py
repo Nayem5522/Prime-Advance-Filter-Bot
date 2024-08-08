@@ -51,9 +51,9 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 👨‍💻 Cᴏᴍᴍᴀɴᴅ : /clone</b>"""
 
     SUBSCRIPTION_TXT = """
-<b>Our Prime Movie Premium Channel is a highly interesting channel , There are millions of movies in Direct Video format{}
+<b>Our Prime Movie Premium Channel is a highly interesting channel , There are millions of movies in Direct Video format. That's For Using{}
 
-Click To Join Premium- <a href='https://t.me/Join_Prime_Movie_Premium_bot'>Join Premium</a>
+Click To Join Premium-👇👇 <a href='https://t.me/Join_Prime_Movie_Premium_bot'>Prime Movies Premium</a>
 
 ɪғ {} First go there and click 🔥 advance subscription 🔥.
 
