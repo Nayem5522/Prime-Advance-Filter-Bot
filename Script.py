@@ -482,7 +482,7 @@ BOT WORKING PROPERLY"""
 
  படி 1: இந்த Prime Movie Search Bot போட் உங்கள் குழுவை நிர்வாகியாக்குங்கள்
 
- After that tell me 👇👇
+ After that tell me 
 
  @Prime_Bots_Support_RoBot
 
@@ -503,7 +503,7 @@ Hey <a href='tg://settings'>ᴍʏ ғʀɪᴇɴᴅ</a>
 
  Step 1: Administer this Prime Movie Search Bot bot to your group
 
- After that tell me 👇👇
+ After that tell me 
 
  @Prime_Bots_Support_RoBot
 ..."""
@@ -522,7 +522,7 @@ Hey <a href='tg://settings'>ᴍʏ ғʀɪᴇɴᴅ</a>
  ఎలా మరియు ఏమి చేయాలి
 
  దశ 1: ఈ Prime Movie Search Bot బాట్‌ని మీ సమూహానికి నిర్వహించండి
- After that tell me 👇👇
+ After that tell me 
 
  @Prime_Bots_Support_RoBot
  
@@ -543,7 +543,7 @@ Hey <a href='tg://settings'>ᴍʏ ғʀɪᴇɴᴅ</a>
  कैसे और क्या करना है
 
  चरण 1: Prime Movie Search Bot समूह में प्रशासित करें
- After that tell me 👇👇
+ After that tell me 
 
  @Prime_Bots_Support_RoBot
  
@@ -565,7 +565,7 @@ Hey <a href='tg://settings'>ᴍʏ ғʀɪᴇɴᴅ</a>
 
  ഘട്ടം 1: ഈ Prime Movie Search Bot ബോട്ട് നിങ്ങളുടെ ഗ്രൂപ്പിലേക്ക് നൽകുക
 
- After that tell me 👇👇
+ After that tell me 
 
  @Prime_Bots_Support_RoBot 
  ..."""
@@ -585,7 +585,7 @@ Hey <a href='tg://settings'>ᴍʏ ғʀɪᴇɴᴅ</a>
 
  مرحلہ 1: اپنے گروپ میں اس Prime Movie Search BOT بوٹ کا انتظام کریں۔
 
- مرحلہ 2 After that tell me 👇👇
+ مرحلہ 2 After that tell me 
 
  @Prime_Bots_Support_RoBot
  
@@ -604,7 +604,7 @@ Hey <a href='tg://settings'>ᴍʏ ғʀɪᴇɴᴅ</a>
 
  પગલું 1: તમારા જૂથમાં આ Prime Movie Search BOT બોટનું સંચાલન કરો
 
-After that tell me 👇👇
+After that tell me 
 
  @Prime_Bots_Support_RoBot 
 ..."""
@@ -623,7 +623,7 @@ After that tell me 👇👇
 
  ಹಂತ 1: ಈ Prime Movie Search Bot ನಿಮ್ಮ ಗುಂಪಿಗೆ ನಿರ್ವಹಿಸಿ
 
- After that tell me 👇👇
+ After that tell me 
 
  @Prime_Bots_Support_RoBot 
 ..."""
@@ -642,8 +642,8 @@ After that tell me 👇👇
 
  ধাপ 1: আপনার গ্রুপে এই Prime Movie Search Bot বট পরিচালনা করুন
 
- এগুলো করার পর আমাকে জানাবেন 👇👇
-After that tell me 👇👇
+ এগুলো করার পর আমাকে জানাবেন 
+After that tell me 
 
  @Prime_Bots_Support_RoBot 
 ..."""
