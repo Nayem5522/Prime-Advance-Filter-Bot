@@ -548,7 +548,6 @@ After that tell me
     KANNADA_INFO = """
 ಹೇ {message.from_user.mention}
 
- ಈಗ ನೀವು ಟೆಲಿಗ್ರಾಮ್‌ನಲ್ಲಿಯೂ ಹಣ ಗಳಿಸಬಹುದು.
 connect Me
  @Prime_Bots_Support_RoBot 
 ..."""
