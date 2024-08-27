@@ -53,7 +53,7 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
     SUBSCRIPTION_TXT = """
 <b>Our Prime Movie Premium Channel is a highly interesting channel , There are millions of movies in Direct Video format. 
 
-Click Here To-👉 <a href='https://t.me/Join_Prime_Movie_Premium_bot'>Join Prime Movies Premium</a>
+Click Here To-👉 <a href='https://t.me/Prime_Premium_4U'>Join Prime Movies Premium</a>
 
  First go there and click 🔥 advance subscription 🔥.
 
