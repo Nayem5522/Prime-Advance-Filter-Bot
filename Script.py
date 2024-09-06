@@ -55,7 +55,7 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
 Click Here To-👉 <a href='https://t.me/Prime_Premium_4U'>Join Prime Movies Premium</a>
 
- First go there and click 🔥 advance subscription 🔥.
+All Country Payment Mathod available 
 
 ʙᴜʏ ᴘᴀɪᴅ ᴘʟᴀɴ ʙʏ - /plan</b>"""
 
@@ -237,7 +237,7 @@ Nᴀᴍᴇ - {}"""
     CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : @Prime_Movies4U {file_name}
 <b> Size ⚙️: {file_size}
 
-Jᴏɪɴ Now ➠ [Prime Movie⚡](https://t.me/Prime_Movies4U)</b>""" 
+Jᴏɪɴ Now ➠ [Prime Movie⚡](https://t.me/Prime_Movies4U)\n\nJᴏɪɴ Now ➠ [ᴘʀɪᴍᴇ Bᴏᴛ's 🔥](https://t.me/Prime_Botz)</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
