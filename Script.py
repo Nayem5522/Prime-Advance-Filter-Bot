@@ -714,7 +714,7 @@ special Thanks To ❤️ Developers -
 
 -Dev 2 <a href='https://t.me/Prime_Movies4U'>PRIME</a>
 
--Dev 3 <a href='https://t.me/+yRq4k6J8o2E0OWJl>Prime Movie Request Group</a>
+-Dev 3 <a href='https://t.me/+OG3sftDEbZ9kMzFl>Prime Movie Request Group</a>
 
 - Dev 4 <a href='https://t.me/Prime_Admin_Nayem'>TEAM Prime</a>
 """
