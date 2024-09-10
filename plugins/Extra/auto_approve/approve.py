@@ -173,11 +173,11 @@ async def auto_approve(client, message: ChatJoinRequest):
                         ],[
                             InlineKeyboardButton("✅How To Open Link & Verify✅", url=VERIFY_TUTORIAL)
                         ],[
-                            InlineKeyboardButton("✅How To Open Link & Nayem ✅", url="t.me/Prime_Nayem")
-                        ]]
+                            InlineKeyboardButton("⭐ Remove Ads ⭐", callback_data='PAYMENT_TEXT')
+                         ]]
                         await client.send_message(
                             chat_id=message.from_user.id,
-                            text="<b>You are not verified !\nKindly verify to continue !\n\nJust Verify One Time And Get \nMovies For next 24hr without any \nverification (Ad)\n\nশুধু একবার verify করুন এবং পরবর্তী !\n24 ঘন্টার জন্য কোনো Ad ছাড়াই সিনেমা পান \n\nverify 🔥 এ ক্লিক করুন verified করতে \n\n(How to Open Link & verify✅ এ‌ ক্লিক করে কিভাবে verify করবেন তা দেখে নিন)\nClick The Button Below To Check How to Open Link & Verify✅ See verified tutorial</b>",
+                            text="<b>You are not verified !\nKindly verify to continue !\n\nJust Verify One Time And Get \nMovies For next 24hr without any \nverification (Ad)\n\nশুধু একবার verify করুন এবং পরবর্তী !\n24 ঘন্টার জন্য কোনো Ad ছাড়াই সিনেমা পান \n\nverify 🔥 এ ক্লিক করুন verified করতে \n\n(How to Open Link & verify✅ এ‌ ক্লিক করে কিভাবে verify করবেন তা দেখে নিন)\nClick The Button Below To Check How to Open Link & Verify✅ See verified tutorial\n\n যদি এভাবে না করে ডাইরেক্ট ফাইল চান তাহলে ক্লিক করুন Remove Ads ⭐ 👇</b>",
                             protect_content=True,
                             reply_markup=InlineKeyboardMarkup(btn)
                         )
@@ -244,11 +244,11 @@ async def auto_approve(client, message: ChatJoinRequest):
                         ],[
                             InlineKeyboardButton("✅How To Open Link & Verify✅", url=VERIFY_TUTORIAL)
                         ],[
-                            InlineKeyboardButton("✅How To Open Link & Nayem ✅", url="t.me/Prime_Nayem")
-                        ]]
+                            InlineKeyboardButton("⭐ Remove Ads ⭐", callback_data='PAYMENT_TEXT')
+                         ]]
                         await client.send_message(
                             chat_id=message.from_user.id,
-                            text="<b>You are not verified !\nKindly verify to continue !\n\nJust Verify One Time And Get \nMovies For next 24hr without any \nverification (Ad)\n\nশুধু একবার verify করুন এবং পরবর্তী !\n24 ঘন্টার জন্য কোনো Ad ছাড়াই সিনেমা পান \n\nverify 🔥 এ ক্লিক করুন verified করতে \n\n(How to Open Link & verify✅ এ‌ ক্লিক করে কিভাবে verify করবেন তা দেখে নিন)\nClick The Button Below To Check How to Open Link & Verify✅ See verified tutorial</b>",
+                            text="<b>You are not verified !\nKindly verify to continue !\n\nJust Verify One Time And Get \nMovies For next 24hr without any \nverification (Ad)\n\nশুধু একবার verify করুন এবং পরবর্তী !\n24 ঘন্টার জন্য কোনো Ad ছাড়াই সিনেমা পান \n\nverify 🔥 এ ক্লিক করুন verified করতে \n\n(How to Open Link & verify✅ এ‌ ক্লিক করে কিভাবে verify করবেন তা দেখে নিন)\nClick The Button Below To Check How to Open Link & Verify✅ See verified tutorial\n\n যদি এভাবে না করে ডাইরেক্ট ফাইল চান তাহলে ক্লিক করুন Remove Ads ⭐ 👇</b>",
                             protect_content=True,
                             reply_markup=InlineKeyboardMarkup(btn)
                         )
@@ -319,11 +319,11 @@ async def auto_approve(client, message: ChatJoinRequest):
                 ],[
                     InlineKeyboardButton("✅How To Open Link & Verify✅", url=VERIFY_TUTORIAL)
                 ],[
-                    InlineKeyboardButton("✅How To Open Link & Nayem ✅", url="t.me/Prime_Nayem")
+                    InlineKeyboardButton("⭐ Remove Ads ⭐", callback_data='PAYMENT_TEXT')
                  ]]
                 await client.send_message(
                     chat_id=message.from_user.id,
-                    text="<b>You are not verified !\nKindly verify to continue !\n\nJust Verify One Time And Get \nMovies For next 24hr without any \nverification (Ad)\n\nশুধু একবার verify করুন এবং পরবর্তী !\n24 ঘন্টার জন্য কোনো Ad ছাড়াই সিনেমা পান \n\nverify 🔥 এ ক্লিক করুন verified করতে \n\n(How to Open Link & verify✅ এ‌ ক্লিক করে কিভাবে verify করবেন তা দেখে নিন)\nClick The Button Below To Check How to Open Link & Verify✅ See verified tutorial</b>",
+                    text="<b>You are not verified !\nKindly verify to continue !\n\nJust Verify One Time And Get \nMovies For next 24hr without any \nverification (Ad)\n\nশুধু একবার verify করুন এবং পরবর্তী !\n24 ঘন্টার জন্য কোনো Ad ছাড়াই সিনেমা পান \n\nverify 🔥 এ ক্লিক করুন verified করতে \n\n(How to Open Link & verify✅ এ‌ ক্লিক করে কিভাবে verify করবেন তা দেখে নিন)\nClick The Button Below To Check How to Open Link & Verify✅ See verified tutorial\n\n যদি এভাবে না করে ডাইরেক্ট ফাইল চান তাহলে ক্লিক করুন Remove Ads ⭐ 👇</b>",
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
