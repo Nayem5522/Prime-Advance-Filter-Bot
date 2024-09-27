@@ -27,11 +27,14 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ],[
-            InlineKeyboardButton('✪ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url="https://t.me/+ZceEtnx2WftjYWU1"),
-            InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+            InlineKeyboardButton('✪ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ ✪', url="https://t.me/+ZceEtnx2WftjYWU1"),
+            InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⌬', url=GRP_LNK)
         ],[
             InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+        ],[
+            InlineKeyboardButton('💫 𝗔𝗻𝘆 𝗣𝗿𝗼𝗯𝗹𝗲𝗺 𝗖𝗼𝗻𝗻𝗲𝗰𝘁 𝗔𝗱𝗺𝗶𝗻 💫', url='https://t.me/Prime_Admin_Support_ProBot')
         ]]
+        
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
         await asyncio.sleep(2) # 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
@@ -48,28 +51,35 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                InlineKeyboardButton('🔥 𝐏𝐑𝐈𝐌𝐄 𝐁𝐎𝐓`𝐒 🔥', url='https://t.me/Prime_Botz'),
+                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⌬', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url='https://t.me/Prime_Admin_Support_ProBot'),
+                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ ⍟', callback_data='about')
             ],[
-                InlineKeyboardButton('💳 Gᴇᴛ Fʀᴇᴇ Oʀ Pᴀɪᴅ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ 💳', callback_data='subscription')
+                InlineKeyboardButton('💳 ⭐ 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 𝗚𝗲𝘁 𝗗𝗶𝗿𝗲𝗰𝘁 𝗙𝗶𝗹𝗲 ⭐ 💳', callback_data="buy_premium")
             ],[
-                InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)       
+            ],[
+                InlineKeyboardButton('💫 𝗖𝗥𝗘𝗔𝗧𝗢𝗥 💫', url='https://t.me/Prime_Nayem')
             ]]
+            
         else:
             buttons = [[
                 InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ',url=GRP_LNK)
+                InlineKeyboardButton('🔥 𝐏𝐑𝐈𝐌𝐄 𝐁𝐎𝐓`𝐒 🔥', url='https://t.me/Prime_Botz'),
+                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⌬',url=GRP_LNK)
             ],[
-                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url='https://t.me/Prime_Admin_Support_ProBot'),
+                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ ⍟', callback_data='about')
             ],[
                 InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+
+            ],[
+                InlineKeyboardButton('💫 𝗖𝗥𝗘𝗔𝗧𝗢𝗥 💫', url='https://t.me/Prime_Nayem')
             ]]
+            
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('🤖 Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ 🤖', callback_data='clone')])
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -130,27 +140,32 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                InlineKeyboardButton('🔥 𝐏𝐑𝐈𝐌𝐄 𝐁𝐎𝐓`𝐒 🔥', url='https://t.me/Prime_Botz'),
+                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⌬', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url='https://t.me/Prime_Admin_Support_ProBot'),
+                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ ⍟', callback_data='about')
             ],[
-                InlineKeyboardButton('💳 Gᴇᴛ Fʀᴇᴇ Oʀ Pᴀɪᴅ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ 💳', callback_data='subscription')
+                InlineKeyboardButton('💳 ⭐ 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 𝗚𝗲𝘁 𝗗𝗶𝗿𝗲𝗰𝘁 𝗙𝗶𝗹𝗲 ⭐ 💳', callback_data="buy_premium")
             ],[
                 InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+            ],[
+                InlineKeyboardButton('💫 𝗖𝗥𝗘𝗔𝗧𝗢𝗥 💫', url='https://t.me/Prime_Nayem')
             ]]
+            
         else:
             buttons = [[
                 InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                InlineKeyboardButton('🔥 𝐏𝐑𝐈𝐌𝐄 𝐁𝐎𝐓`𝐒 🔥', url='https://t.me/Prime_Botz'),
+                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⌬', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url='https://t.me/Prime_Admin_Support_ProBot'),
+                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ ⍟', callback_data='about')
             ],[
                 InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+            ],[
+                InlineKeyboardButton('💫 𝗖𝗥𝗘𝗔𝗧𝗢𝗥 💫', url='https://t.me/Prime_Nayem')
             ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('🤖 Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ 🤖', callback_data='clone')])
@@ -185,25 +200,27 @@ async def start(client, message):
                 buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                    InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                    InlineKeyboardButton('🔥 𝐏𝐑𝐈𝐌𝐄 𝐁𝐎𝐓`𝐒 🔥', url='https://t.me/Prime_Botz'),
+                    InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⌬', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url='https://t.me/Prime_Admin_Support_ProBot'),
+                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ ⍟', callback_data='about')
                 ],[
-                    InlineKeyboardButton('💳 Gᴇᴛ Fʀᴇᴇ Oʀ Pᴀɪᴅ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ 💳', callback_data='subscription')
+                    InlineKeyboardButton('💳 ⭐ 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 𝗚𝗲𝘁 𝗗𝗶𝗿𝗲𝗰𝘁 𝗙𝗶𝗹𝗲 ⭐ 💳', callback_data="buy_premium")
                 ],[
                     InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                ],[
+                    InlineKeyboardButton('💫 𝗖𝗥𝗘𝗔𝗧𝗢𝗥 💫', url='https://t.me/Prime_Nayem')
                 ]]
             else:
                 buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
+                    InlineKeyboardButton('🔥 𝐏𝐑𝐈𝐌𝐄 𝐁𝐎𝐓`𝐒 🔥', url='https://t.me/Prime_Botz'),
                     InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url='https://t.me/Prime_Admin_Support_ProBot'),
+                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ ⍟', callback_data='about')
                 ],[
                     InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
                 ]]
@@ -276,8 +293,8 @@ async def start(client, message):
                     )
                 if STREAM_MODE == True:
                     button = [[
-                        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('⌬ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ ⌬', url=f'https://t.me/{SUPPORT_CHAT}'),
+                        InlineKeyboardButton('✪ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✪', url=CHNL_LNK)
                     ],[
                         InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url="https://t.me/Prime_Nayem")
                     ],[
@@ -288,8 +305,8 @@ async def start(client, message):
                     ]]
                 else:
                     button = [[
-                        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('⌬ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ ⌬', url=f'https://t.me/{SUPPORT_CHAT}'),
+                        InlineKeyboardButton('✪ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✪', url=CHNL_LNK)
                     ],[
                         InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url="https://t.me/Prime_Nayem")
                     ]]
@@ -465,18 +482,18 @@ async def start(client, message):
                     ],[
                         InlineKeyboardButton("✅ How To Open Link & Verify ✅", url=VERIFY_TUTORIAL)
                     ],[
-                        InlineKeyboardButton("⭐ Remove Ads ⭐", url="https://t.me/Prime_Premium_4U")
+                        InlineKeyboardButton("⭐ 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 𝗚𝗲𝘁 𝗗𝗶𝗿𝗲𝗰𝘁 𝗙𝗶𝗹𝗲 ⭐", callback_data="buy_premium")
                      ]]
                     await message.reply_text(
-                        text="<b>You are not verified !\nKindly verify to continue !\n\nJust Verify One Time And Get \nMovies For next 24hr without any \nverification (Ad)\n\nশুধু একবার verify করুন এবং পরবর্তী !\n24 ঘন্টার জন্য কোনো Ad ছাড়াই সিনেমা পান \n\nverify 🔥 এ ক্লিক করুন verified করতে \n\n(How to Open Link & verify✅ এ‌ ক্লিক করে কিভাবে verify করবেন তা দেখে নিন)\nClick The Button Below To Check How to Open Link & Verify✅ See verified tutorial\n\n যদি এভাবে না করে ডাইরেক্ট ফাইল চান তাহলে ক্লিক করুন Remove Ads ⭐ 👇</b>",
+                        text="<b>You are not verified !\nKindly verify to continue !\n\nJust Verify One Time And Get \nMovies For next 24hr without any \nverification (Ad)\n\nশুধু একবার verify করুন এবং পরবর্তী !\n24 ঘন্টার জন্য কোনো Ad ছাড়াই সিনেমা পান \n\n🔻verify 🔥 এ ক্লিক করুন verified করতে \n\n🔻(How to Open Link & verify✅ এ‌ ক্লিক করে কিভাবে verify করবেন তা দেখে নিন)\n\nClick The Button Below To Check How to Open Link & Verify✅ See verified tutorial\n\n 🔻যদি এভাবে না করে ডাইরেক্ট ফাইল চান তাহলে ক্লিক করুন Remove Ads ⭐ 👇</b>",
                         protect_content=True,
                         reply_markup=InlineKeyboardMarkup(btn)
                     )
                     return
             if STREAM_MODE == True:
                 button = [[
-                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                    InlineKeyboardButton('⌬ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ ⌬', url=f'https://t.me/{SUPPORT_CHAT}'),
+                    InlineKeyboardButton('✪ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✪', url=CHNL_LNK)
                 ],[
                     InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="https://t.me/Prime_Nayem")
                 ],[
@@ -484,8 +501,8 @@ async def start(client, message):
                 ]]
             else:
                 button = [[
-                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                    InlineKeyboardButton('⌬ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ ⌬', url=f'https://t.me/{SUPPORT_CHAT}'),
+                    InlineKeyboardButton('✪ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✪', url=CHNL_LNK)
                 ],[
                     InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/Prime_Nayem")
                 ]]
@@ -538,20 +555,20 @@ async def start(client, message):
                     btn = [[
                         InlineKeyboardButton("🔥 Verify 🔥", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                     ],[
-                        InlineKeyboardButton("✅How To Open Link & Verify✅", url=VERIFY_TUTORIAL)
+                        InlineKeyboardButton("✅ How To Open Link & Verify ✅", url=VERIFY_TUTORIAL)
                     ],[
-                        InlineKeyboardButton("⭐ Remove Ads ⭐", callback_data='PAYMENT_TEXT')
+                        InlineKeyboardButton("⭐ 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 𝗚𝗲𝘁 𝗗𝗶𝗿𝗲𝗰𝘁 𝗙𝗶𝗹𝗲 ⭐", callback_data="buy_premium")
                      ]]
                     await message.reply_text(
-                        text="<b>You are not verified !\nKindly verify to continue !\n\nJust Verify One Time And Get \nMovies For next 24hr without any \nverification (Ad)\n\nশুধু একবার verify করুন এবং পরবর্তী !\n24 ঘন্টার জন্য কোনো Ad ছাড়াই সিনেমা পান \n\nverify 🔥 এ ক্লিক করুন verified করতে \n\n(How to Open Link & verify✅ এ‌ ক্লিক করে কিভাবে verify করবেন তা দেখে নিন)\nClick The Button Below To Check How to Open Link & Verify✅ See verified tutorial\n\n যদি এভাবে না করে ডাইরেক্ট ফাইল চান তাহলে ক্লিক করুন Remove Ads ⭐ 👇</b>",
+                        text="<b>You are not verified !\nKindly verify to continue !\n\nJust Verify One Time And Get \nMovies For next 24hr without any \nverification (Ad)\n\nশুধু একবার verify করুন এবং পরবর্তী !\n24 ঘন্টার জন্য কোনো Ad ছাড়াই সিনেমা পান \n\n🔻verify 🔥 এ ক্লিক করুন verified করতে \n\n🔻(How to Open Link & verify✅ এ‌ ক্লিক করে কিভাবে verify করবেন তা দেখে নিন)\n\nClick The Button Below To Check How to Open Link & Verify✅ See verified tutorial\n\n🔻 যদি এভাবে না করে ডাইরেক্ট ফাইল চান তাহলে ক্লিক করুন Remove Ads ⭐ 👇</b>",
                         protect_content=True,
                         reply_markup=InlineKeyboardMarkup(btn)
                     )
                     return
             if STREAM_MODE == True:
                 button = [[
-                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                    InlineKeyboardButton('⌬ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ ⌬', url=f'https://t.me/{SUPPORT_CHAT}'),
+                    InlineKeyboardButton('✪ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✪', url=CHNL_LNK)
                 ],[
                     InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/Prime_Nayem")
                 ],[
@@ -559,8 +576,8 @@ async def start(client, message):
                 ]]
             else:
                 button = [[
-                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                    InlineKeyboardButton('⌬ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ ⌬', url=f'https://t.me/{SUPPORT_CHAT}'),
+                    InlineKeyboardButton('✪ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✪', url=CHNL_LNK)
                 ],[
                     InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="https://t.me/Prime_Nayem")
                 ]]
@@ -611,21 +628,21 @@ async def start(client, message):
         if not await check_verification(client, message.from_user.id) and VERIFY == True:
             btn = [[
                 InlineKeyboardButton("🔥 Verify 🔥", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
-            ],[
-                InlineKeyboardButton("✅How To Open Link & Verify✅", url=VERIFY_TUTORIAL)
-            ],[
-                InlineKeyboardButton("⭐ Remove Ads ⭐", callback_data='PAYMENT_TEXT')
-             ]]
+             ],[
+                InlineKeyboardButton("✅ How To Open Link & Verify ✅", url=VERIFY_TUTORIAL)
+             ],[
+                InlineKeyboardButton("⭐ 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 𝗚𝗲𝘁 𝗗𝗶𝗿𝗲𝗰𝘁 𝗙𝗶𝗹𝗲 ⭐", callback_data="buy_premium")
+              ]]
             await message.reply_text(
-                text="<b>You are not verified !\nKindly verify to continue !\n\nJust Verify One Time And Get \nMovies For next 24hr without any \nverification (Ad)\n\nশুধু একবার verify করুন এবং পরবর্তী !\n24 ঘন্টার জন্য কোনো Ad ছাড়াই সিনেমা পান \n\nverify 🔥 এ ক্লিক করুন verified করতে \n\n(How to Open Link & verify✅ এ‌ ক্লিক করে কিভাবে verify করবেন তা দেখে নিন)\nClick The Button Below To Check How to Open Link & Verify✅ See verified tutorial\n\n যদি এভাবে না করে ডাইরেক্ট ফাইল চান তাহলে ক্লিক করুন Remove Ads ⭐ 👇</b>",
+                text="<b>You are not verified !\nKindly verify to continue !\n\nJust Verify One Time And Get \nMovies For next 24hr without any \nverification (Ad)\n\nশুধু একবার verify করুন এবং পরবর্তী !\n24 ঘন্টার জন্য কোনো Ad ছাড়াই সিনেমা পান \n\n🔻verify 🔥 এ ক্লিক করুন verified করতে \n\n🔻(How to Open Link & verify✅ এ‌ ক্লিক করে কিভাবে verify করবেন তা দেখে নিন)\n\nClick The Button Below To Check How to Open Link & Verify✅ See verified tutorial\n\n🔻 যদি এভাবে না করে ডাইরেক্ট ফাইল চান তাহলে ক্লিক করুন Remove Ads ⭐ 👇</b>",
                 protect_content=True,
                 reply_markup=InlineKeyboardMarkup(btn)
             )
             return
     if STREAM_MODE == True:
         button = [[
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+            InlineKeyboardButton('⌬ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ ⌬', url=f'https://t.me/{SUPPORT_CHAT}'),
+            InlineKeyboardButton('✪Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ✪', url=CHNL_LNK)
         ],[
             InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="https://t.me/Prime_Nayem")
         ],[
@@ -633,8 +650,8 @@ async def start(client, message):
         ]]
     else:
         button = [[
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+            InlineKeyboardButton('⌬ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ ⌬', url=f'https://t.me/{SUPPORT_CHAT}'),
+            InlineKeyboardButton('✪ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✪', url=CHNL_LNK)
         ],[
             InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="https://t.me/Prime_Nayem")
         ]]
