@@ -107,7 +107,7 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/Prime_Movie_Watch_Dawnload/60')
 
 # Shortlink Info
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False))
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'teraboxbd.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'ccd0cdb45fb7e56ff8b3661033c9247478218b72')
 
