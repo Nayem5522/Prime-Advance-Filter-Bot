@@ -234,10 +234,7 @@ Nᴀᴍᴇ - {}"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : @Prime_Movies4U {file_name}
-<b> Size ⚙️: {file_size}
-
-Jᴏɪɴ Now ➠ [Prime Movie⚡](https://t.me/Prime_Movies4U)\n\nJᴏɪɴ Now ➠ [ᴘʀɪᴍᴇ Bᴏᴛ's 🔥](https://t.me/Prime_Botz)</b>""" 
+    CAPTION = """<b>⚡File uploaded by [𝐏𝐑𝐈𝐌𝐄 𝐌𝐎𝐕𝐈𝐄 ✨](https://t.me/Prime_Movies4U)</b>⚡\n\n📂 <i><a href='https://telegram.me/Prime_Movies4U'>{file_name}</a></i>\n\nJᴏɪɴ Now ➠ @Prime_Botz 🔥</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
