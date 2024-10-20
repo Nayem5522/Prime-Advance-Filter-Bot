@@ -4,6 +4,7 @@
 
 import os, logging, string, asyncio, time, re, ast, random, math, pytz, pyrogram
 from datetime import datetime, timedelta, date, time
+import os 
 from Script import script
 from info import *
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InputMediaPhoto, ChatPermissions, WebAppInfo
@@ -18,6 +19,8 @@ from database.connections_mdb import active_connection, all_connections, delete_
 from database.gfilters_mdb import find_gfilter, get_gfilters, del_allg
 from urllib.parse import quote_plus
 from TechVJ.util.file_properties import get_name, get_hash, get_media_file_size
+
+req_channel = int(os.environ.get('REQ_CHANNEL','-1002120012639'))
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
@@ -1994,12 +1997,112 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await query.answer(MSG_ALRT)
 
+      elif data.startswith("notify_user_not_avail"):
+        _, user_id, movie = data.split(":")
+        # Send message to user
+        try:
+            btn = [[
+                InlineKeyboardButton(text=f"🔍 Sᴇᴀʀᴄʜ Here 🔎", url=f"https://t.me/+OG3sftDEbZ9kMzFl")
+            ],[
+                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://t.me/Prime_Admin_Support_ProBot")
+            ]]
+            btn_lzdv = [
+                [
+                InlineKeyboardButton(text=f"🗑 Delete Log ❌", callback_data = "close_data")
+                ]]
+            reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv)
+            reply_markup = InlineKeyboardMarkup(btn)
+            await client.send_message(int(user_id), f"😒 oops! Dode, Your requested content named `{movie}` is not available right now,\n আপনার রিকুয়েস্ট ক্রিত ফাইলটি বর্তমানে নেই । আমরা অনেক খোঁজার চেষ্টা করেছি পাইনি । we are really trying our best to serve you this content, can you please provide us some more details related to your query `{movie}`,\n যদি আপনার মনে হয় যে ফাইলটি সচরাচর থাকতে পারে তাহলে আমাদের এডমিনের সাথে যোগাযোগ করুন 👇\nSend details to Admin : <a href='https://t.me/Prime_Admin_Support_ProBot'>**Send here...**</a>\n\n❤ Thank You for the contribution", reply_markup=reply_markup)
+            await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Not Available 😒.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋",reply_markup=reply_markup_lzdv)
+        # Delete callback query message
+            await query.answer()
+            await query.delete()
+        except Exception as e:
+            print(e)  # print the error message
+            await query.answer(f"☣something went wrong sweetheart\n\n{e}", show_alert=True)
+            return
+        
+     elif data.startswith("notify_user_alrupl"):
+        _, user_id, movie = data.split(":")
+        # Send message to user
+        try:
+            btn = [[
+                InlineKeyboardButton(text=f"🔍 Sᴇᴀʀᴄʜ Here 🔎", url=f"https://t.me/+OG3sftDEbZ9kMzFl")
+            ],[
+                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://t.me/Prime_Admin_Support_ProBot")
+            ]]
+            btn_lzdv = [
+                [
+                InlineKeyboardButton(text=f"🗑 Delete Log ❌", callback_data = "close_data")
+                ]]
+            reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv)            
+            reply_markup = InlineKeyboardMarkup(btn)
+            await client.send_message(int(user_id), f"🛋 Hey Bro, Your requested content named `{movie}` is already available in our database! You can easily get this movie by searching it's correct name in our official group 👇... আপনার রিকোয়েস্ট কৃত ফাইলটি এড করাই আছে । আপনি আমাদের মেইন গ্রুপের রিকুয়েস্ট করতে পারেন👇\n শুধু নামটা বানান ঠিক করে লিখেন \n\nSend details to Admin : \n\n❤ Thank You for the contribution", reply_markup=reply_markup)
+            await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Already Uploaded ⚡.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋",reply_markup=reply_markup_lzdv)
+        # Delete callback query message
+            await query.answer()
+            await query.delete()
+        except Exception as e:
+            print(e)  # print the error message
+            await query.answer(f"☣something went wrong baby\n\n{e}", show_alert=True)
+            return
+
+      elif data.startswith("notify_userupl"):
+        _, user_id, movie = data.split(":")
+        # Send message to user
+        try:
+            btn = [[
+                InlineKeyboardButton(text=f"🔍 Sᴇᴀʀᴄʜ Here 🔎", url=f"https://t.me/+OG3sftDEbZ9kMzFl")
+            ],[
+                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://t.me/Prime_Admin_Support_ProBot")
+            ]]
+            btn_lzdv = [
+                [
+                InlineKeyboardButton(text=f"🗑 Delete Log ❌", callback_data = "close_data")
+                ]]
+            reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
+            reply_markup = InlineKeyboardMarkup(btn)
+            await client.send_message(int(user_id), f"✅ Hey Bro, Your requested content named `{movie}` is now available in our database! You can easily get this movie by searching it's correct name in our official group...\n\n আপনার রিকোয়েস্ট কৃত ফাইলটি আপলোড করে দেওয়া হয়েছে এখন 👇 সঠিক বানানটি লিখুন তাহলে চলে আসবে ফাইলটি 🤗\n❤ Thank You for the contribution", reply_markup=reply_markup)
+            await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Upload done ✅.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋", reply_markup=reply_markup_lzdv)
+        # Delete callback query message
+            await query.answer()
+            await query.delete()
+        except Exception as e:
+            print(e)  # print the error message
+            await query.answer(f"☣something went wrong sona\n\n{e}", show_alert=True)
+            return
+        
+      elif data.startswith("notify_user_req_rejected"):
+        _, user_id, movie = data.split(":")
+        # Send message to user
+        try:
+            btn = [[
+                InlineKeyboardButton(text=f"🔍 Sᴇᴀʀᴄʜ Here 🔎", url=f"https://t.me/+OG3sftDEbZ9kMzFl")
+            ],[
+                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://t.me/Prime_Admin_Support_ProBot")
+            ]]
+            btn_lzdv = [
+                [
+                InlineKeyboardButton(text=f"🗑 Delete Log ❌", callback_data = "close_data")
+                ]]
+            reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
+            reply_markup = InlineKeyboardMarkup(btn)
+            await client.send_message(int(user_id), f"🙇‍♀️ Sorry Bro! Your requested content named `{movie}` is rejected by our **ADMiN**, we are really very sorry for the inconvenience, we can't process your request at the moment...\n\n❤️‍🩹Keep your search environment friendly, sweetheart!", reply_markup=reply_markup)
+            await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Request Rejected ❌.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋",reply_markup=reply_markup_lzdv)
+        # Delete callback query message
+            await query.answer()
+            await query.delete()
+        except Exception as e:
+            print(e)  # print the error message
+            await query.answer(f"☣something went wrong darling\n\n{e}", show_alert=True)
+            return
+
       elif data.startswith("notify_user_spelling_error"):
         _, user_id, movie = data.split(":")
         # Send message to user
         try:
             btn = [[
-                InlineKeyboardButton(text=f"🔍 Sᴇᴀʀᴄʜ 🇭🇪🇷🇪 🔎", url=f"https://t.me/+OG3sftDEbZ9kMzFl")
+                InlineKeyboardButton(text=f"🔍 Sᴇᴀʀᴄʜ Here 🔎", url=f"https://t.me/+OG3sftDEbZ9kMzFl")
             ],[
                 InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://t.me/Prime_Admin_Support_ProBot")
             ]]
@@ -2024,7 +2127,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         # Send message to user
         try:
             btn = [[
-                InlineKeyboardButton(text=f"🔍 Sᴇᴀʀᴄʜ 🇭🇪🇷🇪 🔎", url=f"https://t.me/+OG3sftDEbZ9kMzFl")
+                InlineKeyboardButton(text=f"🔍 Sᴇᴀʀᴄʜ Here 🔎", url=f"https://t.me/+OG3sftDEbZ9kMzFl")
             ],[
                 InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://t.me/Prime_Admin_Support_ProBot")
             ]]
