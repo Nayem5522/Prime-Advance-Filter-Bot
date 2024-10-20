@@ -2758,9 +2758,7 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
             if not files:        
                 await client.send_message(req_channel,f"-🦋 #REQUESTED_CONTENT 🦋-\n\n📝**Content Name** :`{search}`\n**Requested By**: {message.from_user.first_name}\n **USER ID**:{user_id}\n\n🗃️",
                                                                                                        reply_markup=InlineKeyboardMarkup([
-                                                                                                                                        [InlineKeyboardButton(text=f"✅Upload Done", callback_data=f"notify_userupl:{user_id}:{requested_movie}")],     
-                                                                                                                                        ]))
-                
+                                                                                                                                        [InlineKeyboardButton(text=f"✅Upload Done", callback_data="close_data")]]))               
                 if settings["spell_check"]:
                     return await advantage_spell_chok(client, name, msg, reply_msg, ai_search)
                 else:
