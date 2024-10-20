@@ -23,6 +23,8 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 lock = asyncio.Lock()
 
+req_channel = int(os.environ.get('REQ_CHANNEL','-1002154076690'))
+
 BUTTON = {}
 BUTTONS = {}
 FRESH = {}
