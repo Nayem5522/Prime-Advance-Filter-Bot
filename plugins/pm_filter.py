@@ -2758,27 +2758,9 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
             if not files:        
                 await client.send_message(req_channel,f"-🦋 #REQUESTED_CONTENT 🦋-\n\n📝**Content Name** :`{search}`\n**Requested By**: {message.from_user.first_name}\n **USER ID**:{user_id}\n\n🗃️",
                                                                                                        reply_markup=InlineKeyboardMarkup([
-                                                                                                                                        [InlineKeyboardButton(text=f"🤞Request Recieved", callback_data=f"notify_user_req_rcvd:{user_id}:{requested_movie}")],
-                                                                                                                                        [InlineKeyboardButton(text=f"✅Upload Done", callback_data=f"notify_userupl:{user_id}:{requested_movie}")],
-                                                                                                                                        [InlineKeyboardButton(text=f"⚡Already Upl..", callback_data=f"notify_user_alrupl:{user_id}:{requested_movie}"),InlineKeyboardButton("🖊Spell Error", callback_data=f"notify_user_spelling_error:{user_id}:{requested_movie}")],
-                                                                                                                                        [InlineKeyboardButton(text=f"😒Not Available", callback_data=f"notify_user_not_avail:{user_id}:{requested_movie}")],
-                                                                                                                                        [InlineKeyboardButton("❌Reject Req", callback_data=f"notify_user_req_rejected:{user_id}:{requested_movie}")]
+                                                                                                                                        [InlineKeyboardButton(text=f"✅Upload Done", callback_data=f"notify_userupl:{user_id}:{requested_movie}")],     
                                                                                                                                         ]))
                 
-                l = await message.reply_text(text=f"△ HeY `{message.from_user.first_name}`🥰,\nI ᴄᴏᴜʟᴅɴ'ᴛ ғɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ʏᴏᴜʀ ʀᴇᴏ̨ᴜᴇsᴛ.🤧\n>Tʀʏ ʀᴇᴀᴅɪɴɢ ᴛʜᴇ ɪɴsᴛʀᴜᴄᴛɪᴏɴs ʙᴇʟᴏᴡ.\n যে ভাষা বুঝতে পারেন ওই খানে ক্লিক করুন 👇",
-                                                                                                       reply_markup=InlineKeyboardMarkup([
-                                                                                                                                        [ InlineKeyboardButton("HIN", callback_data="read_in_hin"),
-                                                                                                                                          InlineKeyboardButton("Urdu", callback_data="read_in_urd"),
-                                                                                                                                          InlineKeyboardButton("Nol", callback_data="read_in_pb"),
-                                                                                                                                          InlineKeyboardButton("TAM", callback_data="read_in_tam")
-                                                                                                                                        ],[
-                                                                                                                                          InlineKeyboardButton("BANGLA", callback_data="read_in_ban"),
-                                                                                                                                          InlineKeyboardButton("ENGLISH", callback_data="read_in_eng")
-                                                                                                                                        ],
-                                                                                                                                        [ InlineKeyboardButton("═• Search name on google •═", url=generated_link)],
-                                                                                                                                        ]))
-                await asyncio.sleep(60)
-                await l.delete()    
                 if settings["spell_check"]:
                     return await advantage_spell_chok(client, name, msg, reply_msg, ai_search)
                 else:
