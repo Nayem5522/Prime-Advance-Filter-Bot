@@ -1994,6 +1994,84 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await query.answer(MSG_ALRT)
 
+      elif data.startswith("notify_user_spelling_error"):
+        _, user_id, movie = data.split(":")
+        # Send message to user
+        try:
+            btn = [[
+                InlineKeyboardButton(text=f"🔍 Sᴇᴀʀᴄʜ 🇭🇪🇷🇪 🔎", url=f"https://t.me/+OG3sftDEbZ9kMzFl")
+            ],[
+                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://t.me/Prime_Admin_Support_ProBot")
+            ]]
+            btn_lzdv = [
+                [
+                InlineKeyboardButton(text=f"🗑 Delete Log ❌", callback_data = "close_data")
+                ]]
+            reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
+            reply_markup = InlineKeyboardMarkup(btn)
+            await client.send_message(int(user_id), f"🌍 Your spelling matters.\nThe requested content `{movie}` is available in our database, You were unable to get it because of your spelling mistake.🧐 \n আপনার লিখিত বানানের সমস্যা হয়েছে তাই ফাইলটি হয়তো আসেনি‌ । বানানটি সঠিক করে লিখুন। আর যদি না জানেন সঠিক নামটি তাহলে Google থেকে সঠিক নামটি জেনে নিন ।\n তারপর সঠিক নামটি দিয়ে আবার রিকোয়েস্ট করুন রিকোয়েস্ট করুন 👇 \n Please make sure you've spelled correctly while searching content in group...\n\n❤Thank u for supporting us.", reply_markup=reply_markup)
+            await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Spelling error 🖊.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋",reply_markup=reply_markup_lzdv)
+        # Delete callback query message
+            await query.answer()
+            await query.delete()
+        except Exception as e:
+            print(e)  # print the error message
+            await query.answer(f"☣something went wrong sweetie\n\n{e}", show_alert=True)
+            return
+
+      elif data.startswith("notify_user_custom"):
+        _, user_id, movie = data.split(":")
+        # Send message to user
+        try:
+            btn = [[
+                InlineKeyboardButton(text=f"🔍 Sᴇᴀʀᴄʜ 🇭🇪🇷🇪 🔎", url=f"https://t.me/+OG3sftDEbZ9kMzFl")
+            ],[
+                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://t.me/Prime_Admin_Support_ProBot")
+            ]]
+            btn_lzdv = [
+                [
+                InlineKeyboardButton(text=f"🗑 Delete Log ❌", callback_data = "close_data")
+                ]]
+            reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
+            reply_markup = InlineKeyboardMarkup(btn)
+            await client.send_message(int(user_id), f"🌍 Your spelling matters.\nThe requested content `{movie}` is available in our database, You were unable to get it because of your spelling mistake.🧐 \n আপনার লিখিত বানানের সমস্যা হয়েছে তাই ফাইলটি হয়তো আসেনি‌ । বানানটি সঠিক করে লিখুন। আর যদি না জানেন সঠিক নামটি তাহলে Google থেকে সঠিক নামটি জেনে নিন ।\n তারপর সঠিক নামটি দিয়ে আবার রিকোয়েস্ট করুন রিকোয়েস্ট করুন 👇 \nPlease make sure you've spelled correctly while searching content in group...\n\n❤Thank u for supporting us.", reply_markup=reply_markup)
+            await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Spelling error 🖊.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋",reply_markup=reply_markup_lzdv)
+        # Delete callback query message
+            await query.answer()
+            await query.delete()
+        except Exception as e:
+            print(e)  # print the error message
+            await query.answer(f"☣something went wrong sweetie\n\n{e}", show_alert=True)
+            return
+
+      elif data.startswith("notify_user_req_rcvd"):
+        _, user_id, movie = data.split(":")
+        # Send message to user
+        try:
+            btn = [[
+                InlineKeyboardButton(text=f"💛 Request More 💛", url=f"https://t.me/+OG3sftDEbZ9kMzFl")
+            ],[
+                InlineKeyboardButton(text=f"🐞 ══• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •══ 🐞", url=f"https://t.me/Prime_Admin_Support_ProBot")
+            ]]
+            btn_lzdv = [
+                        [InlineKeyboardButton(text=f"♻ ̶R̶e̶q̶u̶e̶s̶t̶ ̶R̶e̶c̶i̶e̶v̶e̶d ♻", callback_data=f"notify_user_req_rcvd:{user_id}:{movie}")],
+                        [InlineKeyboardButton(text=f"✅Upload Done", callback_data=f"notify_userupl:{user_id}:{movie}")],
+                        [InlineKeyboardButton(text=f"⚡Already Upl..", callback_data=f"notify_user_alrupl:{user_id}:{movie}"),InlineKeyboardButton("🖊Spell Error", callback_data=f"notify_user_spelling_error:{user_id}:{movie}")],
+                        [InlineKeyboardButton(text=f"😒Not Available", callback_data=f"notify_user_not_avail:{user_id}:{movie}"),InlineKeyboardButton("📃Write Reply", callback_data=f"notify_user_custom:{user_id}:{movie}")],
+                        [InlineKeyboardButton("❌Reject Req", callback_data=f"notify_user_req_rejected:{user_id}:{movie}")]
+                       ]
+            reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv)
+            reply_markup = InlineKeyboardMarkup(btn)
+            await client.send_message(int(user_id), f"💞Hello sweetheart ! we have recieved your request for  `{movie}`... \n\nPlease keep some patience, we will upload it as soon as possible.\n\n আপনার রিকুয়েস্ট আমরা গ্রহণ করেছি কিছুক্ষণ পর আবার চেষ্টা করুন দেখবেন ফাইলটি চলে আসবে 👇\n❤ Thank u for your Love .❤", reply_markup=reply_markup)
+            await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Request Recieved 🖊.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋",reply_markup=reply_markup_lzdv)
+        # Delete callback query message
+            await query.answer()
+            await query.delete()
+        except Exception as e:
+            print(e)  # print the error message
+            await query.answer(f"☣something went wrong sweetie\n\n{e}", show_alert=True)
+            return
+
     elif query.data == "clone":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='start')
@@ -2046,6 +2124,34 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+
+    elif query.data == "select_info":
+        await query.answer('Please select anything from above menu to filter files eg: Language, Season, Quality', show_alert=True)
+       
+    elif query.data == "read_in_hin":
+        await query.answer("• सही वर्तनी में पूछें।\n• ओटीटी प्लेटफॉर्म पर रिलीज़ न हुई फिल्मों के बारे में न पूछें।\n• संभवतः [मूवी का नाम भाषा] इस तरह पूछें।", show_alert=True)
+    
+    elif query.data == "read_in_eng":
+        await query.answer("• Ask in correct spelling.\n• Don't ask for movies which are not released on OTT platforms.\n• Possible ask [ Movies name language] like this.", show_alert=True)
+    
+    elif query.data == "read_in_ban":
+        await query.answer('• সঠিক বানানে রিকোয়েস্ট করুন।\n• রিলিজ - মুক্তিপ্রাপ্ত নয় এমন সিনেমার জন্য রিকোয়েস্ট করবেন না।. শুধু নামটি ইংরেজিতে লিখতে হবে\n অন্য কিছু লিখলে কিন্তু আসবে না, আপনার কাঙ্খিত লিংক\n ধন্যবাদ', show_alert=True)
+    
+    elif query.data == "read_in_tam":
+        await query.answer('சரியான எழுத்துப்பிழையில் கேளுங்கள்.\nOTT பிளாட்ஃபார்மில் வெளியாகாத திரைப்படங்களைக் கேட்காதீர்கள்.\n• இப்படி [படத்தின் பெயர் மொழி] கேட்கலாம்.', show_alert=True)
+    
+    elif query.data == "read_in_tel":
+        await query.answer('సరైన స్పెల్లింగ్‌లో అడగండి.\nOTT ప్లాట్‌ఫారమ్‌లో విడుదల చేయని సినిమాల కోసం అడగవద్దు.\n• ఇలా [సినిమా పేరు భాష] అడగవచ్చు.', show_alert=True)
+    
+    elif query.data == "read_in_urd":
+        await query.answer('صحیح ہجے میں پوچھیں۔ •\nOTT پلیٹ فارم پر ریلیز نہ ہونے والی فلموں کے بارے میں مت پوچھیں۔ •\nممکنہ پوچھیں [ فلم کے نام کی زبان] اس طرح۔ •', show_alert=True)
+    
+    elif query.data == "read_in_san":
+        await query.answer('• सम्यक् वर्तनीरूपेण पृच्छन्तु।\• OTT मञ्चे न विमोचितानि चलच्चित्राणि मा याचयन्तु।\n• संभवं [ Movie name language] इत्येतत् पृच्छन्तु।', show_alert=True)
+    
+    elif query.data == "select_option":
+        await query.answer('👇👇 Please select anyone of the following  options 👇👇', show_alert=True)
+    
     
     elif query.data == "help":
         buttons = [[
