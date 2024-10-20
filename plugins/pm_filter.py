@@ -20,7 +20,7 @@ from database.gfilters_mdb import find_gfilter, get_gfilters, del_allg
 from urllib.parse import quote_plus
 from TechVJ.util.file_properties import get_name, get_hash, get_media_file_size
 
-req_channel = int(os.environ.get('REQ_CHANNEL','-1002120012639'))
+req_channel = int(os.environ.get('REQ_CHANNEL','-1002154076690'))
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
