@@ -2753,13 +2753,28 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
             search = search.replace(".", "")
             files, offset, total_results = await get_search_results(message.chat.id ,search, offset=0, filter=True)
             settings = await get_settings(message.chat.id)
-            if not files:
-                if settings["spell_check"]:
-                    return await advantage_spell_chok(client, name, msg, reply_msg, ai_search)
-                else:
-                    return
-        else:
-            return
+            if not files:        
+    # যদি spell_check সেটিংস চালু থাকে, তাহলে এডভান্স চেকিং চালু করা
+    if settings.get("spell_check"):
+        found_files = await advantage_spell_chok(client, name, msg, reply_msg, ai_search)
+
+        # যদি ফাইল খুঁজে পায়, তাহলে চ্যানেলে মেসেজ যাবে না
+        if found_files:
+            return  # ফাইল পাওয়া গেলে কিছুই করা হবে না
+
+    # যদি ফাইল না পাওয়া যায় বা spell_check বন্ধ থাকে, তাহলে চ্যানেলে মেসেজ পাঠানো
+    await client.send_message(
+        req_channel,
+        f"-🦋 #REQUESTED_CONTENT 🦋-\n\n"
+        f"📝**Content Name** :`{search}`\n"
+        f"**Requested By**: {message.from_user.first_name}\n"
+        f"**USER ID**: {user_id}\n\n🗃️",
+        reply_markup=InlineKeyboardMarkup([
+            [InlineKeyboardButton(text="✅Upload Done", callback_data="close_data")]
+        ])
+    )
+else:
+    return
     else:
         message = msg.message.reply_to_message  # msg will be callback query
         search, files, offset, total_results = spoll
