@@ -42,7 +42,7 @@ BUTTONS2 = {}
 SPELL_CHECK = {}
 
 # Request Channel ID
-req_channel = int(os.environ.get('REQ_CHANNEL', '-1002154076690'))  # Defaulting to the provided channel ID
+req_channel = int(os.environ.get('REQ_CHANNEL', '-1002120012639'))  # Defaulting to the provided channel ID
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
